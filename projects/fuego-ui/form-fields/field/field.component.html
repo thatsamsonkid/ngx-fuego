@@ -1,0 +1,56 @@
+<div
+	class="sm-form-field {{className}}"
+	[ngClass]="{
+		'focused':isFocused,
+		'float-label':floatLabel, 
+		'has-placeholder': hasPlaceholder, 
+		'has-prefix': hasPrefix,
+		'filled': control.value.length > 0,
+		'has-error': control.invalid
+	}"
+>
+	<div class="sm-form-field__prefix">
+		<ng-content select="field-prefix"></ng-content>
+	</div>
+
+	<label
+		[for]="id"
+		[attr.id]="ariaLabelledby"
+		[ngClass]="{'visually-hidden': labelHidden}"
+		><ng-content select="field-label"></ng-content>
+		<span class="required-label" *ngIf="required">*</span>
+	</label>
+	<ng-container *ngIf="type === 'textarea'; else default">
+		<textarea
+			[id]="id"
+			[formControl]="control"
+			[placeholder]="placeholder"
+			(focus)="onFocusEvent($event)"
+			(blur)="onBlurEvent($event)"
+			(keydown)="onKeyDown($event)"
+			cols="30"
+			rows="2"
+		></textarea>
+	</ng-container>
+	<ng-template #default>
+		<input
+			[type]="type"
+			[id]="id"
+			[formControl]="control"
+			[placeholder]="placeholder"
+			(focus)="onFocusEvent($event)"
+			(blur)="onBlurEvent($event)"
+			(keydown)="onKeyDown($event)"
+			[attr.aria-autocomplete]="ariaAutocomplete"
+			[attr.aria-controls]="ariaControls"
+			[attr.aria-labelledby]="ariaLabelledby"
+			[attr.autocomplete]="nativeAutocomplete"
+			[attr.aria-activedescendant]="activedescendant"
+		/>
+	</ng-template>
+	<ng-content select="field-suffix]"></ng-content>
+	<div class="sm-form-field--message">
+		<ng-content select="field-error"></ng-content>
+		<ng-content select="field-hint"></ng-content>
+	</div>
+</div>

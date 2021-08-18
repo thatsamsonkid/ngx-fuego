@@ -1,0 +1,73 @@
+<!-- <label id="ex2-label" class="combobox-label">
+	Choice 2 Fruit or Vegetable
+</label>
+<div class="combobox-wrapper">
+	<div
+		role="combobox"
+		aria-expanded="false"
+		aria-owns="ex2-listbox"
+		aria-haspopup="listbox"
+		id="ex2-combobox"
+	>
+		<input
+			type="text"
+			aria-autocomplete="list"
+			aria-controls="ex2-listbox"
+			aria-labelledby="ex2-label"
+			id="ex2-input"
+		/>
+	</div>
+	<ul
+		aria-labelledby="ex2-label"
+		role="listbox"
+		id="ex2-listbox"
+		class="listbox hidden"
+	></ul>
+</div> -->
+
+<div
+	class="autocomplete"
+	role="combobox"
+	[attr.aria-expanded]="expanded"
+	[attr.aria-owns]="listboxId"
+	aria-haspopup="listbox"
+	[attr.id]="id"
+>
+	<hmdva-field
+		className="sm-form-field--no-outline sm-form-field--square"
+		[formControl]="control"
+		[placeholder]="placeholder"
+		[ariaAutocomplete]="'list'"
+		[ariaControls]="listboxId"
+		[ariaLabelledby]="labelId"
+		[labelHidden]="labelHidden"
+		(hasFocus)="onFieldFocus($event)"
+		(keyDownEvent)="onKeyEvent($event)"
+		[activeDescendant$]=""
+	>
+		<field-prefix>
+			<img src="./assets/search-outline.png" alt="" role="presentation" />
+		</field-prefix>
+		<field-label>{{label}}</field-label>
+	</hmdva-field>
+	<ul
+		class="listbox"
+		role="listbox"
+		[ngClass]="{'hidden': !expanded}"
+		[attr.id]="listboxId"
+		[attr.aria-labelledby]="labelId"
+	>
+		<ng-container *ngIf="options">
+			<ng-container *ngFor="let option of options | async; let i = index">
+				<li
+					class="d-flex align-items-center"
+					role="option"
+					[attr.id]="id + '-option-' + i"
+					(click)="onSelection(option)"
+				>
+					{{option | valueExtractor : labelKey}}
+				</li>
+			</ng-container>
+		</ng-container>
+	</ul>
+</div>

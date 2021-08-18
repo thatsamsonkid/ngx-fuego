@@ -1,0 +1,24 @@
+.card {
+	padding: 2.4rem 2rem;
+
+	&--light-card {
+		background-color: var(--white);
+		border-radius: 1rem;
+		box-shadow: 2px 0 4px 0 rgba(19, 14, 53, 0.2),
+			2px 4px 6px 0 rgba(19, 14, 53, 0.2);
+	}
+
+	&--outline-card {
+		border: 1px solid #979797;
+		border-radius: 1.35rem;
+	}
+
+	&--seafoam-card {
+		background-color: var(--seafoam);
+	}
+
+	img {
+		border-top-left-radius: inherit;
+		border-top-right-radius: inherit;
+	}
+}

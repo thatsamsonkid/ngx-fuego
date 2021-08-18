@@ -1,0 +1,17 @@
+.tag {
+	width: 5rem;
+	height: 2rem;
+	text-align: center;
+	border-radius: 3px;
+	// background-color: ${(props) => tagThemes[props.theme] && tagThemes[props.theme].backgroundColor};
+	// color:${(props) => tagThemes[props.theme] && tagThemes[props.theme].color};
+
+	span {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 1rem;
+		letter-spacing: 0.18px;
+		line-height: 2rem;
+		text-transform: capitalize;
+	}
+}

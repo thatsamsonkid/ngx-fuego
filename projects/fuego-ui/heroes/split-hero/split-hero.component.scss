@@ -1,0 +1,30 @@
+@import "functions";
+@import "variables";
+@import "mixins/_breakpoints";
+
+.homes-split-hero {
+	max-width: 240rem;
+	background-size: cover;
+	background-position: center;
+
+	.left-content {
+		width: 100%;
+	}
+
+	&__image-wrapper {
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		display: none;
+	}
+
+	@include media-breakpoint-up(md) {
+		.left-content {
+			width: auto;
+		}
+
+		&__image-wrapper {
+			display: block;
+		}
+	}
+}

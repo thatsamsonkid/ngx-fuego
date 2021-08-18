@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FuegoUiComponent } from './fuego-ui.component';
+import { AutocompleteComponent } from './autocomplete.component';
 
-describe('FuegoUiComponent', () => {
-  let component: FuegoUiComponent;
-  let fixture: ComponentFixture<FuegoUiComponent>;
+describe('AutocompleteComponent', () => {
+  let component: AutocompleteComponent;
+  let fixture: ComponentFixture<AutocompleteComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FuegoUiComponent ]
+      declarations: [ AutocompleteComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FuegoUiComponent);
+    fixture = TestBed.createComponent(AutocompleteComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

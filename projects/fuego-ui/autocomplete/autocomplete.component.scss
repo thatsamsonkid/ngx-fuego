@@ -1,0 +1,39 @@
+.autocomplete {
+	position: relative;
+
+	.sm-form-field {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.sm-form-field__prefix img {
+		width: 1rem;
+		top: 1rem;
+	}
+
+	input {
+		height: 3rem;
+	}
+
+	.listbox {
+		min-width: 230px;
+		width: 100%;
+		background: white;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 4em;
+		z-index: 1006;
+		box-shadow: 2px 3px 2px 1px rgb(54 55 64 / 21%);
+
+		li {
+			min-height: 2.3rem;
+			padding: 0.5rem 1rem;
+
+			&:hover {
+				background-color: #ebf5ff;
+			}
+		}
+	}
+}
