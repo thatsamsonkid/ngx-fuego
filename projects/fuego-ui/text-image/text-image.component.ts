@@ -6,9 +6,9 @@ import {
 	OnInit,
 	ViewChild
 } from "@angular/core";
+import { WindowService } from "fuego-core";
 import { Subject } from "rxjs";
 import { takeUntil } from "rxjs/operators";
-import { WindowService } from "src/app/core/services/window.service";
 
 @Component({
 	selector: "sm-text-image",
@@ -40,7 +40,8 @@ export class TextImageComponent implements OnInit, AfterViewInit, OnDestroy {
 
 	setMatchedHeight(): void {
 		if (this.matchHeight && this.textContainer) {
-			this.imgHeight = this.textContainer.nativeElement.childNodes[0].clientHeight;
+			this.imgHeight =
+				this.textContainer.nativeElement.childNodes[0].clientHeight;
 		}
 	}
 

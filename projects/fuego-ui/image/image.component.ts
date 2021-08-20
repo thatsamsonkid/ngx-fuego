@@ -12,7 +12,7 @@ import {
 } from "@angular/core";
 import { Subject } from "rxjs";
 import { takeUntil } from "rxjs/operators";
-import { WindowService } from "src/app/core/services/window.service";
+import { WindowService } from "fuego-core";
 
 @Component({
 	selector: "hmdva-image",
@@ -21,7 +21,8 @@ import { WindowService } from "src/app/core/services/window.service";
 	encapsulation: ViewEncapsulation.None
 })
 export class ImageComponent
-	implements OnInit, AfterViewInit, OnChanges, OnDestroy {
+	implements OnInit, AfterViewInit, OnChanges, OnDestroy
+{
 	@Input() src: string = "";
 	@Input() alt: string = "";
 	@Input() ratio: number = 0.75;

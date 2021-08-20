@@ -2,6 +2,8 @@
  * Public API Surface of fuego-ui
  */
 
-// export * from './lib/fuego-ui.service';
-// export * from './lib/fuego-ui.component';
-// export * from './lib/fuego-ui.module';
+export * from "./card/card.component";
+export * from "./card/card.module";
+
+export * from "./image/image.component";
+export * from "./image/image.module";

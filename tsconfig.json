@@ -8,6 +8,10 @@
     "strict": true,
     "noImplicitReturns": true,
     "paths": {
+      "fuego-core": [
+        "dist/fuego-core/fuego-core",
+        "dist/fuego-core"
+      ],
       "fuego-ui": [
         "dist/fuego-ui/fuego-ui",
         "dist/fuego-ui"

@@ -1,7 +1,8 @@
 {
-  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/fuego-ui",
-  "lib": {
-    "entryFile": "./public-api.ts"
-  }
+	"$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+	"dest": "../../dist/fuego-ui",
+	"assets": ["CHANGELOG.md"],
+	"lib": {
+		"entryFile": "./public-api.ts"
+	}
 }

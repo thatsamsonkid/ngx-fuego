@@ -126,8 +126,8 @@
     "fuego-ui": {
       "projectType": "library",
       "root": "projects/fuego-ui",
-      "sourceRoot": "projects/fuego-ui/src",
-      "prefix": "lib",
+      "sourceRoot": "projects/fuego-ui",
+      "prefix": "fuego",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -155,6 +155,46 @@
             "tsConfig": [
               "projects/fuego-ui/tsconfig.lib.json",
               "projects/fuego-ui/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "fuego-core": {
+      "projectType": "library",
+      "root": "projects/fuego-core",
+      "sourceRoot": "projects/fuego-core/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/fuego-core/tsconfig.lib.json",
+            "project": "projects/fuego-core/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/fuego-core/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/fuego-core/src/test.ts",
+            "tsConfig": "projects/fuego-core/tsconfig.spec.json",
+            "karmaConfig": "projects/fuego-core/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/fuego-core/tsconfig.lib.json",
+              "projects/fuego-core/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
