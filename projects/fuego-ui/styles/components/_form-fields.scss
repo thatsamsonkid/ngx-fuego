@@ -1,5 +1,5 @@
 /* Form Fields  */
-.sm-form-field {
+.fue-form-field {
 	position: relative;
 	// padding: 1rem 0;
 	padding: 0.5rem 0 0.5rem;
@@ -7,7 +7,7 @@
 	width: 100%;
 }
 
-.sm-form-field label {
+.fue-form-field label {
 	position: absolute;
 	margin: 0;
 	left: 1.4rem;
@@ -19,9 +19,9 @@
 	opacity: 0.7;
 }
 
-.sm-form-field.float-label.filled label,
-.sm-form-field.focused.float-label label,
-.sm-form-field.has-placeholder label {
+.fue-form-field.float-label.filled label,
+.fue-form-field.focused.float-label label,
+.fue-form-field.has-placeholder label {
 	// top: -0.85rem;
 	opacity: 1 !important;
 	// top: 0.1rem;
@@ -36,13 +36,13 @@
 	}
 }
 
-.sm-form-field.focused label,
-.sm-form-field.focused.filled label,
-.sm-form-field.float-label.filled label {
+.fue-form-field.focused label,
+.fue-form-field.focused.filled label,
+.fue-form-field.float-label.filled label {
 	opacity: 0;
 }
 
-.sm-form-field input {
+.fue-form-field input {
 	border-radius: 1.4rem;
 	border: 2px solid var(--royal-blue);
 	padding: 0.2rem 0.7rem;
@@ -52,26 +52,26 @@
 	/* max-width: 32rem; */
 }
 
-.sm-form-field.sm-form-field--no-outline input {
+.fue-form-field.fue-form-field--no-outline input {
 	border: none;
 }
 
-.sm-form-field.sm-form-field--square input {
+.fue-form-field.fue-form-field--square input {
 	border-radius: 4px;
 }
 
-.sm-form-field input:focus {
+.fue-form-field input:focus {
 	outline: 0;
 	border: 2px solid var(--seafoam);
 }
 
 /* error */
-.sm-form-field.has-error input.ng-dirty.ng-touched {
+.fue-form-field.has-error input.ng-dirty.ng-touched {
 	outline: 0;
 	border: 2px solid var(--salmon);
 }
 
-.sm-form-field .sm-form-field--message {
+.fue-form-field .fue-form-field--message {
 	color: var(--salmon);
 	padding: 0 0.5rem;
 	position: absolute;
@@ -79,24 +79,24 @@
 
 /* prefix  */
 
-.sm-form-field .sm-form-field__prefix {
+.fue-form-field .fue-form-field__prefix {
 	position: relative;
 }
 
-.sm-form-field .sm-form-field__prefix img {
+.fue-form-field .fue-form-field__prefix img {
 	position: absolute;
 	left: 1rem;
 	top: 0.3rem;
 }
 
-.sm-form-field.has-prefix input {
+.fue-form-field.has-prefix input {
 	padding-left: 3rem;
 }
 
 /* suffix */
 
 /* Textarea */
-.sm-form-field {
+.fue-form-field {
 	textarea {
 		width: 100%;
 		min-height: 75px;

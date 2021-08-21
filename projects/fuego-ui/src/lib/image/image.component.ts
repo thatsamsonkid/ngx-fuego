@@ -15,7 +15,7 @@ import { takeUntil } from "rxjs/operators";
 import { WindowService } from "fuego-core";
 
 @Component({
-	selector: "hmdva-image",
+	selector: "fue-image",
 	templateUrl: "./image.component.html",
 	styleUrls: ["./image.component.scss"],
 	encapsulation: ViewEncapsulation.None

@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'hmdva-select',
-  templateUrl: './select.component.html',
-  styleUrls: ['./select.component.scss']
+	selector: "fue-select",
+	templateUrl: "./select.component.html",
+	styleUrls: ["./select.component.scss"]
 })
 export class SelectComponent implements OnInit {
+	constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+	ngOnInit(): void {}
 }

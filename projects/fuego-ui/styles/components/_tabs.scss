@@ -1,6 +1,6 @@
 /* Tabs */
 
-.sm-tabs__list {
+.fue-tabs__list {
 	display: flex;
 	flex-flow: row;
 	list-style: none;
@@ -9,7 +9,7 @@
 	justify-content: center;
 }
 
-.sm-tab {
+.fue-tab {
 	min-width: 12rem;
 	position: relative;
 	text-align: center;
@@ -27,19 +27,19 @@
 	}
 }
 
-.sm-tab.sm-tab--dark-blue a {
+.fue-tab.fue-tab--dark-blue a {
 	color: var(--white);
 }
 
-.sm-tab.sm-tab--dark-blue.sm-tab--active a::after {
+.fue-tab.fue-tab--dark-blue.fue-tab--active a::after {
 	background-color: var(--royal-blue) !important;
 }
 
-.sm-tab.sm-tab--active a {
+.fue-tab.fue-tab--active a {
 	color: var(--royal-blue);
 }
 
-.sm-tab.sm-tab--active a::after {
+.fue-tab.fue-tab--active a::after {
 	content: "";
 	position: absolute;
 	width: 0.2rem;

@@ -1,5 +1,5 @@
 <div
-	class="sm-form-field {{className}}"
+	class="fue-form-field {{className}}"
 	[ngClass]="{
 		'focused':isFocused,
 		'float-label':floatLabel, 
@@ -9,7 +9,7 @@
 		'has-error': control.invalid
 	}"
 >
-	<div class="sm-form-field__prefix">
+	<div class="fue-form-field__prefix">
 		<ng-content select="field-prefix"></ng-content>
 	</div>
 
@@ -49,7 +49,7 @@
 		/>
 	</ng-template>
 	<ng-content select="field-suffix]"></ng-content>
-	<div class="sm-form-field--message">
+	<div class="fue-form-field--message">
 		<ng-content select="field-error"></ng-content>
 		<ng-content select="field-hint"></ng-content>
 	</div>

@@ -6,7 +6,7 @@ import {
 } from "@angular/core";
 
 @Component({
-	selector: "hmdva-full-hero",
+	selector: "fue-full-hero",
 	templateUrl: "./full-hero.component.html",
 	styleUrls: ["./full-hero.component.scss"],
 	changeDetection: ChangeDetectionStrategy.OnPush

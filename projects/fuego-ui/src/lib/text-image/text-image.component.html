@@ -1,14 +1,20 @@
 <div
-	class="text-image-cmp sm-container d-flex justify-content-between align-content-center"
+	class="
+		text-image-cmp
+		fue-container
+		d-flex
+		justify-content-between
+		align-content-center
+	"
 >
 	<div #imgContainer class="text-image-cmp--image align-self-center">
-		<hmdva-image
+		<fue-image
 			[src]="imgSrc"
 			[alt]="imgAlt"
 			[ratio]="imgRatio"
 			[enforcedHeight]="imgHeight"
 			className="mb-4"
-		></hmdva-image>
+		></fue-image>
 	</div>
 	<div #textContainer class="text-image-cmp--text">
 		<ng-content select=".text-image--text"></ng-content>

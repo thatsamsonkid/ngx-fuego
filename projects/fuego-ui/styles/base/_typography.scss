@@ -57,25 +57,25 @@ body {
 }
 
 /* Text Style */
-.sm-text {
+.fue-text {
 	font-size: 1rem;
 	letter-spacing: 0.25px;
 	line-height: 2rem;
 }
 
 @media (min-width: 768px) {
-	.sm-text {
+	.fue-text {
 		font-size: 1.4rem;
 	}
 }
 
-.sm-overline {
+.fue-overline {
 	color: var(--royal-blue);
 	font-size: 1.4rem;
 	font-weight: var(--bold);
 }
 
-.sm-subline {
+.fue-subline {
 	color: var(--gray);
 	font-size: 1.2rem;
 	font-weight: var(--semi);

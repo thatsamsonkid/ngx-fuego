@@ -23,7 +23,7 @@ import { FieldPrefixDirective } from "./field-prefix.directive";
 
 let id = 0;
 @Component({
-	selector: "hmdva-field",
+	selector: "fue-field",
 	templateUrl: "./field.component.html",
 	styleUrls: ["./field.component.scss"],
 	changeDetection: ChangeDetectionStrategy.OnPush,
@@ -71,7 +71,7 @@ export class FieldComponent
 	@ContentChild(FieldErrorDirective) errorContent?: FieldErrorDirective;
 	@ContentChild(FieldHintDirective) hintContent?: FieldHintDirective;
 
-	id: string = `sm-field-${id++}`;
+	id: string = `fue-field-${id++}`;
 
 	disabled: boolean = false;
 

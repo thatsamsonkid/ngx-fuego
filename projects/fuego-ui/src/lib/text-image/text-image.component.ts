@@ -11,7 +11,7 @@ import { Subject } from "rxjs";
 import { takeUntil } from "rxjs/operators";
 
 @Component({
-	selector: "sm-text-image",
+	selector: "fue-text-image",
 	templateUrl: "./text-image.component.html",
 	styleUrls: ["./text-image.component.scss"]
 })

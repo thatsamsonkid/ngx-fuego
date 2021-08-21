@@ -1,11 +1,10 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input } from "@angular/core";
 
 @Component({
-  selector: 'hmdva-hr',
-  templateUrl: './hr.component.html',
-  styleUrls: ['./hr.component.scss']
+	selector: "fue-hr",
+	templateUrl: "./hr.component.html",
+	styleUrls: ["./hr.component.scss"]
 })
-export class HrComponent{
-
-  @Input() className:string = '';
+export class HrComponent {
+	@Input() className: string = "";
 }

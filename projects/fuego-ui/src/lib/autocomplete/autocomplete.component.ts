@@ -16,7 +16,7 @@ import { ControlValueAccessorConnector } from "../form-fields/control-accessor-c
 let id = 0;
 
 @Component({
-	selector: "hmdva-autocomplete",
+	selector: "fue-autocomplete",
 	templateUrl: "./autocomplete.component.html",
 	styleUrls: ["./autocomplete.component.scss"],
 	encapsulation: ViewEncapsulation.None,
