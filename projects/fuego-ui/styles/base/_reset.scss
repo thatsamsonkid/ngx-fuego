@@ -1,0 +1,40 @@
+:root,
+html,
+body {
+	font-size: 10px;
+}
+
+body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// All Link Override
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+// Bootstrap Container overrides
+/* COntainer Override  */
+@media (min-width: 576px) {
+	.container {
+		max-width: 100% !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 100% !important;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 100% !important;
+	}
+}

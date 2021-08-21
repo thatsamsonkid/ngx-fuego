@@ -4,6 +4,7 @@
 	"peerDependencies": {
 		"@angular/common": "^11.2.14",
 		"@angular/core": "^11.2.14",
+		"bootstrap": "^5.1.0",
 		"fuego-core": "0.0.1"
 	},
 	"dependencies": {

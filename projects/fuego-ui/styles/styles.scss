@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+// @Vender
+@import "./vendors/bootstrap";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+// @Abstracts
+@import "abstracts/variables";
+
+// @Base
+@import "base/containers";
+@import "base/reset";
+@import "base/shadows";
+@import "base/typography";
+@import "base/utils";
+
+// @Components
+@import "components/banner";
+@import "components/buttons";
+@import "components/form-fields";
+@import "components/hr";
+@import "components/select";
+@import "components/tabs";
+@import "components/text-image";

@@ -1,0 +1,116 @@
+/* Form Fields  */
+.sm-form-field {
+	position: relative;
+	// padding: 1rem 0;
+	padding: 0.5rem 0 0.5rem;
+	margin: 1rem 0;
+	width: 100%;
+}
+
+.sm-form-field label {
+	position: absolute;
+	margin: 0;
+	left: 1.4rem;
+	// top: 1.7rem;
+	top: 1.3rem;
+	font-size: 1.4rem;
+	transition: all 0.3s;
+	pointer-events: none;
+	opacity: 0.7;
+}
+
+.sm-form-field.float-label.filled label,
+.sm-form-field.focused.float-label label,
+.sm-form-field.has-placeholder label {
+	// top: -0.85rem;
+	opacity: 1 !important;
+	// top: 0.1rem;
+	top: -0.7rem;
+	left: 0.85rem;
+	background: white;
+	padding: 0 0.5rem;
+	z-index: 2;
+
+	.required-label {
+		color: red;
+	}
+}
+
+.sm-form-field.focused label,
+.sm-form-field.focused.filled label,
+.sm-form-field.float-label.filled label {
+	opacity: 0;
+}
+
+.sm-form-field input {
+	border-radius: 1.4rem;
+	border: 2px solid var(--royal-blue);
+	padding: 0.2rem 0.7rem;
+	width: 100%;
+	height: 3.4rem;
+	font-size: 1.4rem;
+	/* max-width: 32rem; */
+}
+
+.sm-form-field.sm-form-field--no-outline input {
+	border: none;
+}
+
+.sm-form-field.sm-form-field--square input {
+	border-radius: 4px;
+}
+
+.sm-form-field input:focus {
+	outline: 0;
+	border: 2px solid var(--seafoam);
+}
+
+/* error */
+.sm-form-field.has-error input.ng-dirty.ng-touched {
+	outline: 0;
+	border: 2px solid var(--salmon);
+}
+
+.sm-form-field .sm-form-field--message {
+	color: var(--salmon);
+	padding: 0 0.5rem;
+	position: absolute;
+}
+
+/* prefix  */
+
+.sm-form-field .sm-form-field__prefix {
+	position: relative;
+}
+
+.sm-form-field .sm-form-field__prefix img {
+	position: absolute;
+	left: 1rem;
+	top: 0.3rem;
+}
+
+.sm-form-field.has-prefix input {
+	padding-left: 3rem;
+}
+
+/* suffix */
+
+/* Textarea */
+.sm-form-field {
+	textarea {
+		width: 100%;
+		min-height: 75px;
+		outline: none;
+		resize: none;
+		border: 1px solid grey;
+		padding: 1rem;
+		font-size: 1.2rem;
+		border: 2px solid var(--royal-blue);
+		border-radius: 0.4rem;
+
+		&:focus {
+			outline: 0;
+			border: 2px solid var(--seafoam);
+		}
+	}
+}

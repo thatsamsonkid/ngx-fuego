@@ -1,0 +1,92 @@
+// Base Typography
+:root,
+html,
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+.fue-heading {
+	&-xl {
+		font-size: 2.8rem;
+		letter-spacing: 0.5px;
+		line-height: 26px;
+	}
+
+	&-lg {
+		font-size: 2rem;
+	}
+
+	&-md {
+		font-size: 1.8rem;
+		letter-spacing: 0.32px;
+		line-height: 2rem;
+	}
+
+	@include media-breakpoint-up(md) {
+		&-xl {
+			font-size: 3rem;
+		}
+
+		&-lg {
+			font-size: 2.2rem;
+		}
+
+		&-md {
+			font-size: 2rem;
+		}
+	}
+}
+
+.fue-body {
+	letter-spacing: 0.25px;
+	line-height: 2.4rem;
+	color: var(--royal-blue);
+	font-size: 1.4rem;
+
+	@include media-breakpoint-up(md) {
+		font-size: 1.6rem;
+	}
+}
+
+.font-semi {
+	font-weight: 600;
+}
+
+.font-light {
+	font-weight: 300;
+}
+
+/* Text Style */
+.sm-text {
+	font-size: 1rem;
+	letter-spacing: 0.25px;
+	line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+	.sm-text {
+		font-size: 1.4rem;
+	}
+}
+
+.sm-overline {
+	color: var(--royal-blue);
+	font-size: 1.4rem;
+	font-weight: var(--bold);
+}
+
+.sm-subline {
+	color: var(--gray);
+	font-size: 1.2rem;
+	font-weight: var(--semi);
+}
+
+.small-text {
+	font-size: 1rem;
+}
+
+.medium-text {
+	font-size: 1.4rem;
+	letter-spacing: 0.25px;
+	line-height: 2rem;
+}

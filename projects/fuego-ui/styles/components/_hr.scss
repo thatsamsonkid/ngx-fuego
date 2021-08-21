@@ -1,0 +1,13 @@
+hr.sm-hr {
+	width: 100%;
+	max-width: 120rem;
+	height: 0.4rem;
+	margin-right: auto;
+	margin-left: auto;
+	opacity: 1;
+	border-radius: 2px;
+
+	&.hr-green {
+		background-color: var(--seafoam);
+	}
+}

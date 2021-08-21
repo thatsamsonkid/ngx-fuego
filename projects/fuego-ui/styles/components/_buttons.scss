@@ -1,0 +1,50 @@
+.hmdva-button {
+	border-radius: 24px;
+	font-size: 1.4rem;
+	letter-spacing: 0.3px;
+	line-height: 12px;
+	text-align: center;
+	padding: 1.4rem 2rem;
+	display: inline-block;
+	transition: background-color 0.2s, color 0.2s;
+	font-weight: 600;
+
+	&--primary {
+		background-color: var(--seafoam);
+		color: var(--royal-blue);
+		border: 0;
+
+		&:hover {
+			background-color: var(--white);
+			color: var(--royal-blue);
+		}
+	}
+
+	&--secondary {
+		background-color: var(--white);
+		color: var(--royal-blue);
+		border: 1px solid var(--royal-blue);
+		// min-height: 3.1rem;
+	}
+
+	&--tertiary {
+		background-color: var(--royal-blue);
+		color: var(--white);
+		// min-height: 2.8rem;
+		border: none;
+	}
+
+	&:disabled {
+		opacity: 0.8;
+	}
+}
+
+a.hmdva-button {
+	text-decoration: none;
+}
+
+@media (max-width: 767px) {
+	.fw-mobile {
+		width: 100%;
+	}
+}

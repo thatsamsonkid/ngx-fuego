@@ -1,0 +1,53 @@
+:root {
+	--white: #ffff;
+	--royal-blue: #003365;
+	--black: black;
+	--light-blue: #3769e8;
+	/* --gray: #48648b; i like this blue */
+	--sky-blue: #71ddff;
+	--seafoam: #7bd9a7;
+	--salmon: #ff7373;
+	--gray: #6f747a;
+}
+
+/* Color Utils */
+.text-green {
+	color: var(--seafoam);
+}
+
+.text-light-blue {
+	color: var(--light-blue);
+}
+
+.text-gray {
+	color: var(--gray);
+}
+
+.text-white {
+	color: var(--white);
+}
+
+.text-red {
+	color: #ff0000;
+}
+
+// Color Overrides
+.sea-green {
+	color: var(--seafoam) !important;
+}
+
+.royal-blue {
+	color: var(--royal-blue) !important;
+}
+
+.bckgrd-sea-green {
+	background-color: var(--seafoam) !important;
+}
+
+.bckgrd-white {
+	background-color: var(--white) !important;
+}
+
+.bckgrd-royal-blue {
+	background-color: var(--royal-blue) !important;
+}
