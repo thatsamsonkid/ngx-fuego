@@ -37,7 +37,8 @@ let id = 0;
 })
 export class FieldComponent
 	extends ControlValueAccessorConnector
-	implements OnInit, AfterViewInit, OnDestroy {
+	implements OnInit, AfterViewInit, OnDestroy
+{
 	@Input() floatLabel: boolean = false;
 	@Input() hasPlaceholder: boolean = false;
 	@Input() className: string = "";
@@ -47,7 +48,7 @@ export class FieldComponent
 	@Input() ariaLabelledby?: string;
 
 	//Input Specific
-	@Input() placeholder: string = "";
+	@Input() placeholder?: string = "";
 	@Input() type?: string;
 	@Input() nativeAutocomplete: string = "none";
 	@Input() activeDescendant$?: Observable<string>;
@@ -107,7 +108,7 @@ export class FieldComponent
 		this.unsubscribe.complete();
 	}
 
-	onFocusEvent(e: any): void {
+	onFocusEvent(e: Event): void {
 		this.isFocused = true;
 		this.hasFocus.emit(true);
 	}

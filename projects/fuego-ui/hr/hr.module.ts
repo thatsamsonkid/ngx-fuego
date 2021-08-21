@@ -1,12 +1,10 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
-
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { HrComponent } from "./hr.component";
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+	declarations: [HrComponent],
+	imports: [CommonModule],
+	exports: [HrComponent]
 })
-export class HrModule { }
+export class HrModule {}

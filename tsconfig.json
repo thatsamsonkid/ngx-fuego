@@ -9,11 +9,11 @@
     "noImplicitReturns": true,
     "paths": {
       "fuego-core": [
-        "dist/fuego-core/fuego-core",
+        "dist/fuego-core/*",
         "dist/fuego-core"
       ],
       "fuego-ui": [
-        "dist/fuego-ui/fuego-ui",
+        "dist/fuego-ui/*",
         "dist/fuego-ui"
       ]
     },

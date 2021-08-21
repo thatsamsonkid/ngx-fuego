@@ -72,8 +72,8 @@ export class AutocompleteComponent
 		}
 	}
 
-	onFieldFocus($event: boolean): void {
-		this.expanded = $event;
+	onFieldFocus(focusEvent: boolean): void {
+		this.expanded = focusEvent;
 	}
 
 	onSelection(option: any): void {
@@ -84,9 +84,8 @@ export class AutocompleteComponent
 		}
 	}
 
-	onKeyEvent($event: KeyboardEvent): void {
-		console.log($event);
-		switch ($event.key) {
+	onKeyEvent(keyEvent: KeyboardEvent): void {
+		switch (keyEvent.key) {
 			case "ArrowUp":
 				break;
 			case "ArrowDown":
