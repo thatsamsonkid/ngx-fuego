@@ -122,8 +122,8 @@
 		"fuego-ui": {
 			"projectType": "library",
 			"root": "projects/fuego-ui",
-			"sourceRoot": "projects/fuego-ui",
-			"prefix": "fuego",
+			"sourceRoot": "projects/fuego-ui/src",
+			"prefix": "fue",
 			"architect": {
 				"build": {
 					"builder": "@angular-devkit/build-angular:ng-packagr",
@@ -161,7 +161,7 @@
 			"projectType": "library",
 			"root": "projects/fuego-core",
 			"sourceRoot": "projects/fuego-core/src",
-			"prefix": "lib",
+			"prefix": "fue",
 			"architect": {
 				"build": {
 					"builder": "@angular-devkit/build-angular:ng-packagr",
