@@ -28,6 +28,7 @@
 							"projects/style-guide/src/assets"
 						],
 						"styles": [
+							"dist/fuego-ui/styles/styles.scss",
 							"projects/style-guide/src/styles/styles.scss"
 						],
 						"scripts": []

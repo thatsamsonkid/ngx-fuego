@@ -3,6 +3,7 @@
 	"dest": "../../dist/fuego-ui",
 	"assets": ["CHANGELOG.md", "./styles"],
 	"lib": {
-		"entryFile": "./src/public-api.ts"
+		"entryFile": "./src/public-api.ts",
+		"styleIncludePaths": ["node_modules/bootstrap/scss"]
 	}
 }
