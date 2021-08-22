@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+// @abstracts
+@import "abstracts/variables";
+
+// @layouts
+@import "layouts/page";
+
+// @themes
+@import "themes/dark-mode";

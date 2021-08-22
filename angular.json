@@ -31,6 +31,9 @@
 							"dist/fuego-ui/styles/styles.scss",
 							"projects/style-guide/src/styles/styles.scss"
 						],
+						"stylePreprocessorOptions": {
+							"includePaths": ["node_modules/bootstrap/scss"]
+						},
 						"scripts": []
 					},
 					"configurations": {

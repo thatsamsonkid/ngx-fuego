@@ -1,3 +1,20 @@
-<main>
-	<router-outlet></router-outlet>
-</main>
+<div class="main-page-layout">
+	<header>
+		<a class="site-logo" href="" [routerLink]="['/']">
+			<img src="./assets/fire.png" alt="Library Logo" />
+			Fuego UI
+		</a>
+	</header>
+	<nav>
+		<ul class="fue-list fue-list--3-1 no-list">
+			<li *ngFor="let page of pages" class="fue-card">
+				<a href="" [routerLink]="page.link" routerLinkActive="active">
+					{{page.name}}
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<router-outlet></router-outlet>
+	</main>
+</div>

@@ -5,33 +5,13 @@
 		<img class="fire-icon" src="./assets/fire.png" alt="Fire Emoji" />
 	</div>
 	<div class="mx-auto mt-5">
-		<ul class="no-list">
-			<li class="">
-				<a href="" [routerLink]="['/autocomplete']">Autocomplete</a>
-			</li>
-			<li>
-				<a href="" [routerLink]="['/card']">Card</a>
-			</li>
-			<li>
-				<a href="" [routerLink]="['/form-fields']">Form Fields</a>
-			</li>
-			<li>
-				<a href="" [routerLink]="['/heroes']">Heroes</a>
-			</li>
-			<li>
-				<a href="" [routerLink]="['/hr']">Hr</a>
-			</li>
-			<li>
-				<a href="" [routerLink]="['/search-box']">Search box</a>
-			</li>
-			<li>
-				<a href="" [routerLink]="['/tag']">Tag</a>
-			</li>
-			<li>
-				<a href="" [routerLink]="['/Text Image']">Text Image</a>
-			</li>
-			<li>
-				<a href="" [routerLink]="['/Typography']">Typography</a>
+		<ul class="fue-list fue-list--3-1 no-list">
+			<li *ngFor="let page of pages" class="fue-card">
+				<a href="" [routerLink]="page.link">
+					<fue-card className="card--outline-card">
+						{{page.name}}
+					</fue-card>
+				</a>
 			</li>
 		</ul>
 	</div>

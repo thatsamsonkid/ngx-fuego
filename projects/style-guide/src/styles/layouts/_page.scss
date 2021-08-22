@@ -1,0 +1,38 @@
+@import "functions";
+@import "variables";
+@import "mixins/_breakpoints";
+
+.main-page-layout {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-areas:
+		"head head head head head"
+		"content content content content content";
+
+	@include media-breakpoint-up(md) {
+		grid-template-columns: minmax(200px, auto) 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+			"head head head head head head"
+			"navi content content content content content";
+	}
+
+	header {
+		grid-area: head;
+		padding: 1rem 1rem;
+	}
+
+	nav {
+		grid-area: navi;
+		height: 100vh;
+		// max-width: 25rem;
+		display: none;
+
+		@include media-breakpoint-up(md) {
+			display: block;
+		}
+	}
+
+	main {
+		grid-area: content;
+	}
+}

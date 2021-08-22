@@ -1,0 +1,21 @@
+body {
+	background-color: var(--black);
+	color: var(--white);
+}
+
+header {
+	background-color: var(--darkest);
+	box-shadow: 1px 1px 10px 0px black;
+	z-index: 10;
+}
+
+nav {
+	background-color: var(--darker);
+	z-index: 8;
+	box-shadow: 1px 1px 10px 0px black;
+	// box-shadow: 1px 1px 10px 0px #424242;
+}
+
+main {
+	margin: 3rem 2rem 0 2rem;
+}

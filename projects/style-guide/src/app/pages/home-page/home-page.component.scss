@@ -1,3 +1,65 @@
+@import "functions";
+@import "variables";
+@import "mixins/_breakpoints";
+
 .fire-icon {
 	max-width: 20rem;
+}
+
+.fue-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0 1rem;
+
+	li {
+		flex: 0 1 100%;
+		padding: 0 0 1rem 0;
+	}
+
+	&.fue-list--2-1 li {
+		@include media-breakpoint-up(md) {
+			flex: 0 1 50%;
+
+			&:nth-child(odd) {
+				padding-right: 0.5rem;
+			}
+
+			&:nth-child(even) {
+				padding-left: 0.5rem;
+			}
+		}
+	}
+
+	&.fue-list--3-1 li {
+		@include media-breakpoint-up(sm) {
+			flex: 0 1 50%;
+			&:nth-child(odd) {
+				padding-right: 0.5rem;
+			}
+
+			&:nth-child(even) {
+				padding-left: 0.5rem;
+			}
+		}
+
+		@include media-breakpoint-up(md) {
+			flex: 0 1 33.33%;
+			padding: 0.5rem;
+		}
+	}
+
+	&.fue-list--4-1 li {
+		@include media-breakpoint-up(md) {
+			flex: 0 1 25%;
+
+			&:nth-child(odd) {
+				padding-right: 0.5rem;
+			}
+
+			&:nth-child(even) {
+				padding-left: 0.5rem;
+			}
+		}
+	}
 }
